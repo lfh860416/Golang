@@ -1,10 +1,12 @@
 package main
+
+
 import "fmt"
 
 func main() {
-	var name = "winne"
+	var name1 = "winne"
+	var name2 string = "jerry"
 	//shorthand
-	name2 := "jerry"
 	name3, email := "alex", "alex@163.com"
 
 	//int
@@ -15,9 +17,11 @@ func main() {
 	//float64
 	size2 := 1.2
 
+	var isCute = false
 	const isCool = true
 
-	fmt.Println(name, name2, age, name3, email)
-	fmt.Printf("%T %T %T %T %T\n", size, size2, age, age2, isCool)
+	fmt.Println(name3, age, email, size, isCool)
+	fmt.Printf("%T %T %T %T\n", name1, name2, age, age2)
+	fmt.Printf("%T %T %T %T\n", size, size2, isCute, isCool)
 
 }
