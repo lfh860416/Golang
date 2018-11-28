@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 import "math"
+import "time"
 
 const s string = "constant"
 
@@ -60,6 +61,29 @@ func main() {
 	}	
 
 	//If/Else
+	if num := 9; num < 0 {
+		fmt.Println(num, "is negative!")
+	} else if n < 10 {
+		fmt.Println(num, "has one digit!")
+	} else {
+		fmt.Println(num, "has multiple digits!")
+	}
+
+	//switch
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("It's the weekend!")
+	default:
+		fmt.Println("It's a weekday!")
+	}
+
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("it's before noon")
+	default:
+		fmt.Println("it's after noon")
+	}
 
 
 
